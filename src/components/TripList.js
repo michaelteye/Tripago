@@ -6,17 +6,6 @@ export default function TripList() {
     const [url, setUrl] = useState('http://localhost:3000/trips')
     const {data} = useFetch(url)
 
-    // const fetchTrips = useCallback(async ()=>{
-    //     const response = await fetch(url)
-    //     const json = await response.json()
-    //     setTrips(json)
-    // }, [url])
-
-    // useEffect(()=>{
-    //    fetchTrips()
-    // },[url, fetchTrips])
-    // console.log(trips)
-
   return (
     <div className='trip-list'>
         <h2>Trip List</h2>
